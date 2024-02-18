@@ -1,0 +1,771 @@
+@import url("https://fonts.googleapis.com/css2?family=Futura+PT:wght@400;700&family=Rustic&family=F37+Caslon:wght@400&display=swap");
+
+body {
+  overflow-y: scroll;
+}
+
+.nav-container {
+  background-color: #ffffff;
+  height: 130px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.un-ordered-list-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.menu-list-items {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: #000000;
+  padding: 16px;
+  border: none;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 450;
+  font-size: 14px;
+  letter-spacing: 2.1px;
+}
+
+.dropbtn:hover {
+  color: #cd5f10;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.dropdown-content a {
+  color: #000000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #cd5f10;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main-heading {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 2.5px;
+  margin-left: 150px;
+  margin-right: 150px;
+  color: #1a4122;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-span {
+  font-size: 10px;
+  color: #abb8c3;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  margin-top: 0px;
+}
+
+.nav-btn {
+  background-color: #c15627;
+  padding: 5px 13px;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-btn:hover {
+  background-color: #ff6900;
+}
+
+#video-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  font-size: 100px;
+  font-family: "F37 Caslon", serif;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 710px;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px;
+  padding-right: 0px;
+  padding-top: 120px;
+  margin-top: 30px;
+}
+
+.welcome-content-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.welcome-into {
+  font-family: "Rustica", sans-serif;
+  font-size: 18px;
+  color: #647b4e;
+  margin: 18px 0px 30px;
+  letter-spacing: 2.5px;
+}
+
+.all-headings {
+  font-family: "F37 Calson", serif;
+  font-size: 90px;
+  color: #1a4122;
+  margin: 0px 0px 24px;
+  line-height: 1;
+}
+
+.welcome-content-para {
+  font-family: "futura-pt", sans-serif;
+  color: #1a4122;
+  margin: 10px 0px 30px;
+}
+
+.all-buttons {
+  width: 195px;
+  height: 50px;
+  background-color: #c15627;
+  font-family: "futura-pt", sans-serif;
+  font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 30px;
+  align-self: center;
+}
+
+.all-buttons:hover {
+  background-color: #cf2e2e;
+}
+
+.arrow-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.all-buttons:hover .arrow-btn {
+  transform: translateX(5px);
+}
+
+.welocme-carousel-conatiner {
+  width: 50%;
+}
+
+.carousel-container-card {
+  border-top-left-radius: 300px;
+  width: 100%;
+}
+
+.image-cards {
+  width: 70%;
+  height: 520px;
+}
+
+.wedding-middle-container {
+  width: 100%;
+  padding: 150px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wedding-image {
+  width: 500px;
+  height: 750px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+}
+
+.exceptational-wedding-description-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
+.wedding-exceptational-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.type-of-wedding-container {
+  margin-right: 150px;
+}
+
+.type-of-wed-heading {
+  font-family: "F37 Caslon", serif;
+  font-size: 26px;
+  color: #1a4122;
+  margin-bottom: 20px;
+}
+
+.type-of-wedding-un-order-list {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.wedding-list {
+  font-family: "F37 Caslon", serif;
+  font-size: 26px;
+  color: #92929280;
+  margin: 29.6px, 0px, 0px;
+  margin-bottom: 20px;
+}
+
+.exceptational-heading {
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+  color: #1a4122;
+  margin: 0px 0px 18px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.exceptational-description {
+  font-family: "futura-pt", sans-serif;
+  font-size: 20px;
+  color: #1a4122;
+  margin: 21px 0px 31.5px;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.Unforgettable-Venues-container {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.banner-img {
+  height: 60%;
+  width: 100%;
+}
+
+.unforgettable-content-container {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding-top: 140px;
+  width: 40%;
+  border-top-left-radius: 330px;
+  border-top-right-radius: 330px;
+  margin-bottom: 70px;
+}
+
+.content-responsive-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.venues-name {
+  font-family: "Rustica", sans-serif;
+  font-size: 18px;
+  color: #647b4e;
+  margin: 18px 0px 30px;
+  letter-spacing: 3px;
+}
+
+.Unforgettable-Venues-description {
+  font-family: "futura-pt", sans-serif;
+  font-size: 20px;
+  color: #1a4122;
+  margin: 20px 0px 35px;
+  font-weight: lighter;
+}
+
+.venue-images-container {
+  margin-top: 550px;
+  margin-bottom: 80px;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-left: 70px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: grey;
+  margin-right: 600px;
+  margin-left: 600px;
+  margin-bottom: 90px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.venue-images {
+  height: 500px;
+  width: 500px;
+  margin-right: 50px;
+  margin-bottom: 80px;
+}
+
+.just-business-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.just-bussiness-para {
+  font-family: "futura-pt", sans-serif;
+  font-size: 20px;
+  margin: 20px 0px 35px;
+  color: #1a4122;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+.business-video-container {
+  margin-bottom: 120px;
+}
+
+.food-para {
+  font-family: "futura-pt", sans-serif;
+  margin: 20px 0px 35px;
+  color: #1a4122;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.great-food-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.great-food-responsive-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 60px;
+}
+
+.left-side-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.service-heading {
+  font-family: "F37 Caslon", serif;
+  font-size: 35px;
+  margin: 0px 0px 20px;
+  color: #1a4122;
+}
+
+.para {
+  font-family: "futura-pt", sans-serif;
+  margin: 18px 0px 27px;
+  color: #1a4122;
+  font-size: 18px;
+}
+
+.services-work-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-btn {
+  align-self: center;
+  background-color: transparent;
+  border: 1px solid #c15627;
+  color: #c15627;
+  border-radius: 30px;
+  padding: 10px 60px 10px 40px;
+  font-family: "futura-pt", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 50px;
+}
+
+.service-btn:hover {
+  border: 1px solid #ff6900;
+  color: #ff6900;
+}
+
+.arrow-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.service-btn:hover .arrow-btn {
+  transform: translateX(5px);
+}
+
+.service-image {
+  height: auto;
+  width: 400px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.endless-inspiration-container {
+  width: 100%;
+  height: 500px;
+  background-color: #c15627;
+  display: flex;
+  flex-direction: row;
+  margin-top: 120px;
+}
+
+.endless-inspiration-content-container {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.sing-up-img {
+  height: 100%;
+  width: 50%;
+}
+
+.endless-heading {
+  font-family: "F37 Caslon", serif;
+  font-size: 64px;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.endless-para {
+  font-family: "futura-pt", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  letter-spacing: 2.3px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.input-bar {
+  width: 320px;
+  height: 53px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+}
+
+.input-bar::placeholder {
+  color: #c15627;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.sign-up-btn {
+  background-color: #993921;
+  color: #ffffff;
+  padding: 12px;
+  height: 53px;
+  width: 130px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sign-up-btn:hover {
+  background-color: #ff6900;
+}
+
+.arrow-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.sign-up-btn:hover .arrow-btn {
+  transform: translate(5px);
+}
+
+.last-line-endless {
+  font-family: "futura-pt", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 2.1px;
+}
+
+.footer-container {
+  background-color: #e9e4e0;
+  padding-top: 80px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 60px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-add-container {
+  width: 30%;
+  margin-right: 60px;
+}
+
+.footer-main-heading {
+  font-family: "futura-pt", sans-serif;
+  margin: 0px 0px 40px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #1a4122;
+}
+
+.footer-main-span {
+  font-size: 10px;
+  color: #abb8c3;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.conact-details-text {
+  font-family: "futura-pt", sans-serif;
+  margin: 20px 0px 30px;
+  color: #1a4122;
+  font-size: 18px;
+}
+
+.contact-details-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.call-text {
+  font-family: "Rustica";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 15px 0px 0px;
+  color: #1a4122;
+  text-wrap: nowrap;
+}
+
+.text-to-contact {
+  font-family: "futura-pt", sans-serif;
+  font-size: 14px;
+  color: #1a4122;
+  line-height: 140%;
+  font-weight: 400;
+  margin-left: 14px;
+}
+
+.about-details-conatiner {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+
+.about-conatiner {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.footer-sections-heading {
+  font-family: "F37 Caslon", sans-serif;
+  font-size: 25px;
+  color: #1a4122;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 120%;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.footer-arrow {
+  color: #993921;
+  margin-left: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-sections-heading:hover .footer-arrow {
+  transform: translateX(5px);
+}
+
+.about-un-order-list {
+  padding-left: 0px;
+  list-style-type: none;
+  margin-right: 32px;
+}
+
+.about-text {
+  font-family: "futura-pt", sans-serif;
+  font-size: 14px;
+  color: #1a4122;
+  line-height: 150%;
+  margin-bottom: 14px;
+}
+
+.footer-icons {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.horizontal-line {
+  border: 2px solid #b4c7a3;
+  margin: 15px 0px;
+}
+
+.copy-right-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right-reserved-text {
+  font-family: "futura-pt", sans-serif;
+  font-size: 14px;
+  color: #1a4122;
+  margin: 14px 0px 21px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.dot {
+  font-size: 4px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.back-to-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e9e4e0;
+}
+
+.back-to-btn {
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #7bdcb5;
+  color: #1a4122;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.back-to-btn:hover {
+  background-color: #e9e4e0;
+}
+
+.angle-icon {
+  margin-right: 10px;
+}
